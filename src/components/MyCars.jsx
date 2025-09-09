@@ -6,7 +6,7 @@ class MyCars extends Component {
     render() {
         return (
             <div class="MyCars">
-                <h2> Je suis MyCars.jsx </h2>
+                <h2> MyCars.jsx </h2>
                 <Car/>
             </div>
         )

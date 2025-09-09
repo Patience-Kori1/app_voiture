@@ -1,20 +1,35 @@
+body {
+  background-color: #f8f4f4;
+}
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background-color: #d2caca;
+  background-color: #beb6b6;
+  color: #f9fafb;
+  border-radius: 2rem;
+  border: #a55656 solid 2px;
 }
 
 .MyCars {
   background-color: #a55656;
-  height: 10rem;
+  height: 18rem;
+  width: 15rem ;
+  border-radius: 2rem;
+  padding: 0.4rem;
+  border: #f9fafb solid 1px;
+  
 }
 
 .Car {
   background-color: #92a684;
   width: 10rem ;
-  
+  margin: 0 auto;
+  border-radius: 2rem;
+  padding: 0.4rem;
+  border: #f9fafb solid 1px;
+
 }
 
 @keyframes logo-spin {

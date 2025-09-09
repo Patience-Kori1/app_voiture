@@ -2,8 +2,9 @@
 const Car =  () => {
   return (
     <div class="Car">
-        
-        <p>Marque: </p>
+       <h3> Car.jsx</h3> 
+
+        <p> Marque: </p>
         <p>Couleur: </p>
       
     </div>

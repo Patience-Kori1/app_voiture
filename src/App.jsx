@@ -7,7 +7,7 @@ class App extends Component {
 
   return (
     <>
-      <h1> Je suis App.jsx </h1>
+      <h1> App.jsx </h1>
       <MyCars/>
       
       
