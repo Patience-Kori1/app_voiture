@@ -3,16 +3,21 @@ import Car from './Cars.jsx'
 // import './App.css';
 
 class MyCars extends Component {
+
+    state = {
+        marques : ["peugeot", "Ford", "Mercedes"]
+    }
+
     render() {
         return (
-            <div class="MyCars">
+            <div className="MyCars">
 
                 <h2> MyCars.jsx </h2>
-                <h3>{this.props.title}</h3>
+                <h3 style={{ color: this.props.color }}> {this.props.title}</h3>
 
-                <Car color='bleu'>Ford</Car>
+                <Car color='bleu'>{this.state.marques[0]}</Car>
                 <Car color='Rouge'></Car>
-                <Car >Peugeot</Car>
+                <Car >{this.state.marques[2]}</Car>
 
             </div>
         )

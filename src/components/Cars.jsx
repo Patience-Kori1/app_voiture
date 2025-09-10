@@ -1,21 +1,25 @@
+import Wrapper from './Wrapper.jsx'
 
 const Car =  ({children, color}) => {
   // const colorInfo = color ? <p>Couleur: {color}</p> : <p>Couleur: "Néant"</p>;
 
-  return children ? (
+    // return children ? ( pour le cas d'un return en ternaire
+    return children && (
 
-    <div class="Car">
+    <Wrapper>
       <h3> Car.jsx</h3> 
       
       <p> Marque: {children} </p>
       {/* <p>{colorInfo}</p> */}
-      {color ? <p>Couleur: {color}</p> : <p>Couleur: "Néant"</p>}
-    </div>
+      {color ? <p>Couleur: {color}</p> : <p>Couleur: "<span style= {{color:"red"}}>Néant</span>"</p>}
+    </Wrapper>
   ) 
-  
-  : 
-  
-  <p> Pas de data children</p>;
+  // :
+  // <p>Couleur: "<span style= {{color:"red"}}; pour le cas d'un return en ternaire :
+
+  ||
+  (<p className="Car"> Pas de data children</p>)
+ 
 }
 
 export default Car 

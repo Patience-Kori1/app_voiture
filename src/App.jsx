@@ -6,6 +6,7 @@ class App extends Component {
 
   state = {
     titre: 'Mon Catalogue Voitures',
+    color : 'green'
   };
 
   render () {
@@ -15,6 +16,7 @@ class App extends Component {
       <h1> App.jsx </h1>
       <MyCars
         title={this.state.titre}
+        color = {this.state.color}
       />
       
       
