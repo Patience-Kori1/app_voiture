@@ -6,8 +6,13 @@ class MyCars extends Component {
     render() {
         return (
             <div class="MyCars">
+
                 <h2> MyCars.jsx </h2>
-                <Car/>
+
+                <Car color='bleu'>Ford</Car>
+                <Car color='Rouge'></Car>
+                <Car >Peugeot</Car>
+
             </div>
         )
     }

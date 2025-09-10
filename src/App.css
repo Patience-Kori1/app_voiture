@@ -14,7 +14,7 @@ body {
 
 .MyCars {
   background-color: #a55656;
-  height: 18rem;
+  /* height: 18rem; */
   width: 15rem ;
   border-radius: 2rem;
   padding: 0.4rem;
@@ -25,7 +25,7 @@ body {
 .Car {
   background-color: #92a684;
   width: 10rem ;
-  margin: 0 auto;
+  margin: 1rem auto;
   border-radius: 2rem;
   padding: 0.4rem;
   border: #f9fafb solid 1px;
