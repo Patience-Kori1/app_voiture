@@ -8,6 +8,7 @@ class MyCars extends Component {
             <div class="MyCars">
 
                 <h2> MyCars.jsx </h2>
+                <h3>{this.props.title}</h3>
 
                 <Car color='bleu'>Ford</Car>
                 <Car color='Rouge'></Car>

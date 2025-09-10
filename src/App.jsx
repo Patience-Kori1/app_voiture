@@ -3,12 +3,19 @@ import './App.css';
 import MyCars from './components/MyCars'
 
 class App extends Component {
+
+  state = {
+    titre: 'Mon Catalogue Voitures',
+  };
+
   render () {
 
   return (
     <>
       <h1> App.jsx </h1>
-      <MyCars/>
+      <MyCars
+        title={this.state.titre}
+      />
       
       
     </>
