@@ -1,5 +1,6 @@
 import React, {Component} from 'react'; // l'import React n'a plus d'importance
-import Car from './Cars.jsx'
+import Car from './Cars.jsx';
+import MyHeader from './MyHeader.jsx';
 // import './App.css';
 
 class MyCars extends Component {
@@ -11,13 +12,22 @@ class MyCars extends Component {
     render() {
         return (
             <div className="MyCars">
-
-                <h2> MyCars.jsx </h2>
-                <h3 style={{ color: this.props.color }}> {this.props.title}</h3>
+                 
+                <MyHeader
+                    myStyle = {this.props.color} 
+                > 
+                    {this.props.title} 
+                </MyHeader>
 
                 <Car color='bleu'>{this.state.marques[0]}</Car>
                 <Car color='Rouge'></Car>
                 <Car >{this.state.marques[2]}</Car>
+
+                <MyHeader
+                    myStyle = {this.props.color} 
+                > 
+                    {this.props.title} 
+                </MyHeader>
 
             </div>
         )

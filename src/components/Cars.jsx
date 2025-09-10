@@ -14,8 +14,10 @@ const Car =  ({children, color}) => {
       {color ? <p>Couleur: {color}</p> : <p>Couleur: "<span style= {{color:"red"}}>Néant</span>"</p>}
     </Wrapper>
   ) 
+
   // :
-  // <p>Couleur: "<span style= {{color:"red"}}; pour le cas d'un return en ternaire :
+
+  // <p>Couleur: "<span style= {{color:"red"}}; pour le cas d'un return en ternaire avec les
 
   ||
   (<p className="Car"> Pas de data children</p>)
