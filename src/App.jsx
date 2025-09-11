@@ -9,22 +9,45 @@ class App extends Component {
   };
 
   changeTitle = () => {
-    this.setState({titre: 'Nouveau titre'}) 
+    this.setState({titre: 'Titre en dur'}) 
   };
+
+  changeViaParam = (titre) => {
+    this.setState({
+      titre: titre
+    })
+  }
+
+  changeViaBind = (param) => {
+    this.setState({
+      titre: param
+    })
+  }
+
+  changeViaInput = (e) => {
+    this.setState({
+      titre:e.target.value
+    })
+  }
  
   render () {
 
   return (
-    <>
+    <div className="appJsx">
 
       <MyCars
         title={this.state.titre}
         color = {this.state.color}
       />
 
-      <button onClick={this.changeTitle}> Changer le nom en dur </button>
-      
-    </>
+      <div className="buttonDiv">
+        <button onClick={this.changeTitle}> Changer le nom en dur </button>
+        <button onClick= {()=>this.changeViaParam('Titre via un parm')}> Changer via param</button>
+        <button onClick= {this.changeViaBind.bind(this,'Titre via Bind')}> Changer via Bind </button>
+
+        <input type="text" onChange={this.changeViaInput} value={this.state.titre}/>
+        </div>
+    </div>
 
   )
 

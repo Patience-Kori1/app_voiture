@@ -31,8 +31,19 @@ body {
   border: #f9fafb solid 1px;
 
 }
-
-
+.appJsx {
+  display: flex;
+  gap: 1rem;
+}
+.buttonDiv {
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+}
+.buttonDiv input{
+  padding: 1rem;
+  
+}
 
 @keyframes logo-spin {
   from {
