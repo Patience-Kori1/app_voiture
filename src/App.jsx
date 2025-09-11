@@ -3,26 +3,30 @@ import './App.css';
 import MyCars from './components/MyCars'
 
 class App extends Component {
-
-  state = {
+ state = {
     titre: 'Mon Catalogue Voitures',
     color : 'green'
   };
 
+  changeTitle = () => {
+    this.setState({titre: 'Nouveau titre'}) 
+  };
+ 
   render () {
 
   return (
     <>
-      <h1> App.jsx </h1>
+
       <MyCars
         title={this.state.titre}
         color = {this.state.color}
       />
-      
+
+      <button onClick={this.changeTitle}> Changer le nom en dur </button>
       
     </>
 
-  );
+  )
 
   }
 }
